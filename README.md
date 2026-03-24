@@ -21,29 +21,43 @@ Node.js
 npm or yarn
 MongoDB account (Atlas or local instance)  
 
+
+
 Installation:  
-Clone the repo
+(1)Clone the repo 
+
 git clone https://github.com/<your-username>/ai-flow-webapp.git
 cd ai-flow-webapp
-Install backend dependencies
+
+(2) Install backend dependencies
 cd server
 npm install
-Install frontend dependencies
+
+(3) Install frontend dependencies
 cd ../client
 npm install
-Set up environment variables
+
+(4) Set up environment variables
 
 Create a .env file in the server/ folder:
 
 MONGO_URI=<Your MongoDB URI>
 GROQ_API_KEY=<Your OpenRouter API Key>
 PORT=5000
-Start the backend server
+
+(5) Start the backend server
 cd server
 node index.js
 
-
-
-Start the frontend
+(6) Start the frontend
 cd client
-npm run dev
+npm run dev 
+
+Open your browser at the URL that's shown in terminal (default: http://localhost:5173). 
+
+How to Use
+Type a message in the input box.
+Click Run Flow to see the generated output.
+Click Save to store the message and output in MongoDB. 
+
+
